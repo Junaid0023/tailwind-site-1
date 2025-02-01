@@ -20,9 +20,9 @@
 
     <!-- <style>
       * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
       }
     </style> -->
   </head>
@@ -30,20 +30,19 @@
 
     <main class="px-[7%] bg-[url('./images/truck1.jpg')]  h-screen relative bg-cover backdrop-blur-xs bg-center bg-no-repeat text-white font-Roboto ">
       <!-- navbar -->
-      <nav class=" fixed px-[7%] top-0 left-0 w-full flex items-center justify-between z-50 py-4 text-white border-b border-white bg-gray-900 text-sm">
+      <nav class=" px-[7%]  top-0 left-0 w-full flex items-center justify-between z-50 py-4 text-white border-b border-white bg-gray-900 text-sm">
         <div class="flex">
-          <p class="font-bold text-3xl">Junaid</p>
-          <span class="text-red-500 font underline text-3xl">Haulage.</span>
+          <p class="font-bold text-2xl md:text-3xl">Junaid <span class="text-gray-400">Haulage.</span></p>
         </div>
 
         <!-- mobile nav -->
-        <ul class="gap-5 absolute mt-7 bg-gray-400 right-0 top-14 w-full p-6 flex flex-col items-center  h-[90vh] z-10 bg-gray-400/90 transform-translate-y-full  duration-300 ease-in-out navlinks hidden   " >
+        <ul class="gap-5 absolute mt-7 bg-gray-400 right-0 top-14 w-full p-6 flex flex-col items-center  h-[90vh] z-10 bg-gray-400/90 duration-300 ease-in-out navlinks hidden   " >
           <li><a class="hover:text-gray-400 block py-2" href="">Home</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">Contact Us</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">Services</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">About Us</a></li>
         </ul>
-          <button  class="md:hidden fa-solid fa-bars cursor-pointer text-2xl navBtn" ></i></button>
+          <button  class=" flex md:hidden fa-solid fa-bars cursor-pointer text-2xl navBtn" ></button>
   
 
           <!-- desktop nav -->
@@ -59,21 +58,36 @@
 
         <!-- social media icons -->
       <div class="flex justify-end items-center gap-2 mt-2 bg-gray-400 text-white p-1 px-4">
-        <div class="flex">
-          <a  href=""><i class="fa-brands fa-whatsapp bg-e-500 hover:bg-gray-600 duration-300 ease p-2 rounded-sm"></i></a>
-          <a  href=""><i class="fa-brands fa-facebook bg---500 hover:bg-gray-600 duration-300 ease p-2 rounded-sm"></i></a>
-          <a  href=""><i class="fa-brands fa-tiktok bg---500 hover:bg-gray-600 duration-300 ease p-2 rounded-sm"></i></a>
+        <div class="flex gap-5 mr-6">
+          <a  href=""><i class="fa-brands fa-whatsapp bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
+          <a  href=""><i class="fa-brands fa-facebook bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
+          <a  href=""><i class="fa-brands fa-tiktok bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
         </div>
-        <div>
-          <i class="fa-solid fa-phone cursor-pointer  hover:bg-gray-600 duration-300 ease p-2 rounded-sm"><small> +233557207554</small></i>
+        <div class="flex items-center justify-center py-2 px-2">
+          <div>
+            <i class="fa-solid fa-phone cursor-pointer bg-gray-900 hover:bg-gray-600 duration-300 ease p-2 rounded-sm"></i>
+          </div>
+          <div class="flex leading-[17px]">
+            <p class="ml-2 mr-2"><small> <span>call us <br></span> +233557207554</small></p>
+          </div>
+
+          <div class="flex">
+            <i class="fa-solid fa-envelope cursor-pointer bg-gray-900 hover:bg-gray-600 duration-300 ease p-2 rounded-sm"></i>
+          </div>
+          <div class="flex leading-[17px] ml-2">
+            <p class=""><small> <span>email us <br></span>JunaidHauls7@gmail.com</small></p>
+          </div> 
+            
+        </div>
+          
         </div>
       </div>
 
       <!-- hero section -->
 
-      <div class="md:grid grid-cols-2 gap-2 mt-[15%] ">
+      <div class=" mt-[15%] w-full md:w-full lg:w-1/2 ">
         <aside class=" bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-96  ">
-          <h1 class="text-xl md:text-3xl lg:text-4xl font-bold">Welcome to Junaid Logistics</h1>
+          <h1 class="text-xl md:text-3xl lg:text-4xl font-bold">Moving your goods with speed and care.</h1>
           <p class="text-lg mt-4">Fast, Reliable, and Efficient Logistics Solutions</p>
 
           <div class="flex space-x-4 items-center justify-center mt-14 gap-5 min-w[300px]">
@@ -86,9 +100,7 @@
           </div>
       </aside>
       
-      <div class="flex py-9">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum odio error doloremque, harum possimus temporibus dolorem sunt libero dolore repellat reiciendis sed in perferendis ipsa aut nihil molestiae. Provident, ea.
-      </div>
+      
       </div>       
     </main>
 
@@ -115,27 +127,27 @@
           </div>
         </div>
 
-        <div class="border border-gray-100 p-3 w-full  rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
-          <h1 class="text-2xl font-bold text-center pb-3">Freight Transportation</h1> 
-           <img class=" w-[140px] mb-3 mx-auto" src="images/delivery.png" alt="" >
-           <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-         <div class="py-3">
+        <div class="w-full relative rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
+          <h1 class="text-2xl font-bold top-5  mx-auto absolute">Freight Transportation</h1> 
+           <img class="w-full mx-auto" src="images/truck.jpg" alt="" >
+         <div class="py-3 absolute top-3/6 p-6">
+          <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
            <button class="bg-gray-600 py-2 px-4 flex justify-start items-center hover:bg-gray-500 duration-300 ease-out">see more</button>
          </div>
        </div>
 
-       <div class="border border-gray-100 p-3 w-full  rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
-        <h1 class="text-2xl font-bold text-center pb-3">Freight Transportation</h1> 
-         <img class=" w-[140px] mb-3 mx-auto" src="images/delivery.png" alt="" >
-         <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-       <div class="py-3">
+      <div class="w-full relative rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
+        <h1 class="text-2xl font-bold top-5  absolute">Freight Transportation</h1> 
+         <img class="w-full mx-auto" src="images/moving daf.jpg" alt="" >
+       <div class="py-3 absolute top-3/6 p-6">
+        <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
          <button class="bg-gray-600 py-2 px-4 flex justify-start items-center hover:bg-gray-500 duration-300 ease-out">see more</button>
        </div>
      </div>
 
       <div class="border border-gray-100 p-3 w-full  rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
         <h1 class="text-2xl font-bold text-center pb-3">Freight Transportation</h1> 
-        <img class=" w-[140px] mb-3 mx-auto" src="images/delivery.png" alt="" >
+        <img class="  mb-3 mx-auto" src="images/man truck.png" alt="" >
         <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
         <div class="py-3">
           <button class="bg-gray-600 py-2 px-4 flex justify-start items-center hover:bg-gray-500 duration-300 ease-out">see more</button>
