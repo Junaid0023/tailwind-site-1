@@ -9,13 +9,13 @@ navBtn.addEventListener('click', ()=>{
 
    
    
-    // if(navBtn.classList.contains('fa-bars')){
-    //     navBtn.classList.remove('fa-bars')
-    //     navBtn.classList.add('<fa-x') 
-    // }else{
-    //     navBtn.classList.remove('fa-x');
-    //     navBtn.classList.add('fa-bars');
-    // }
+    if(navBtn.classList.contains('fa-bars')){
+        navBtn.classList.remove('fa-bars')
+        navBtn.classList.add('<fa-x') 
+    }else{
+        navBtn.classList.remove('fa-x');
+        navBtn.classList.add('fa-bars');
+    }
 
     
 
