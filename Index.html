@@ -18,13 +18,12 @@
    
     <title>learning tailwind</title>
 
-    <!-- <style>
+    <style>
       * {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+       
       }
-    </style> -->
+    </style>
   </head>
   <body >
 
@@ -37,8 +36,8 @@
 
         <!-- mobile nav -->
         <ul class="gap-5 absolute mt-7 bg-gray-400 right-0 top-14 w-full p-6 flex flex-col items-center  h-[90vh] z-10 bg-gray-400/90 duration-300 ease-in-out navlinks hidden   " >
-          <li><a class="hover:text-gray-400 block py-2" href="">Home</a></li>
-          <li><a class="hover:text-gray-400 block py-2" href="">Contact Us</a></li>
+          <li><a class="hover:text-gray-400 block py-2" href="Index.html">Home</a></li>
+          <li><a class="hover:text-gray-400 block py-2" href="contactUs.html">Contact Us</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">Services</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">About Us</a></li>
         </ul>
@@ -49,7 +48,7 @@
 
           <ul class="hidden md:flex gap-4 ">
             <li><a class="hover:text-gray-400" href="">Home</a></li>
-            <li><a class="hover:text-gray-400" href="">Contact Us</a></li>
+            <li><a class="hover:text-gray-400" href="contactUs.html">Contact Us</a></li>
             <li><a class="hover:text-gray-400" href="">Services</a></li>
             <li><a class="hover:text-gray-400" href="">About Us</a></li>
           </ul>
@@ -57,7 +56,7 @@
       </nav>
 
         <!-- social media icons -->
-      <div class="flex justify-end items-center gap-2 mt-2 bg-gray-400 text-white p-1 px-4">
+      <div class="flex justify-end items-center gap-2  bg-gray-400 text-white p-1 px-4">
         <div class="flex gap-5 mr-6">
           <a  href=""><i class="fa-brands fa-whatsapp bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
           <a  href=""><i class="fa-brands fa-facebook bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
@@ -86,37 +85,69 @@
       <!-- hero section -->
 
       <div class=" mt-[15%] w-full md:w-full lg:w-1/2 ">
-        <aside class=" bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-96  ">
+        <aside class=" bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-60  ">
           <h1 class="text-xl md:text-3xl lg:text-4xl font-bold">Moving your goods with speed and care.</h1>
           <p class="text-lg mt-4">Fast, Reliable, and Efficient Logistics Solutions</p>
 
-          <div class="flex space-x-4 items-center justify-center mt-14 gap-5 min-w[300px]">
+            <!-- CTA buttons -->
+          <div class="flex flex-col md:flex-row  space-y-4 md:space-x-4 items-center justify-center mt-14 gap-5 min-w-[300px]">
             <a href="#" class=" px-6 py-3 bg-gray-400 hover:bg-gray-600 text-white rounded-sm w-full ">
               Contact
             </a>
-            <a href="#" class="px-6 py-3 border-1 border-white hover:bg-gray-600 text-white rounded-sm w-full ">
+            <a href="#" class="px-6 py-3 border border-white hover:bg-gray-600 text-white rounded-sm w-full ">
               Get a Quote
             </a>
           </div>
       </aside>
       
       
-      </div>       
+      </div>     
+        
     </main>
+
+     <!-- STATISTICS SECTION-->
+     <div class="flex flex-col w-full py-10 bg-[url('./images/containers.jpg')] bg-cover bg-center items-center  mt-20">
+
+      <!-- Heading -->
+      <h1 class="text-3xl font-bold text-center text-white mb-8">Our Achievements at a Glance</h1>
+    
+      <!-- Grid Section -->
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-white p-9 gap-4 ">
+        <div class="border border-white p-5">
+          <h1 class="text-4xl">80%</h1><br>
+          <p>Automated Processes of Order</p>
+        </div>
+    
+        <div class="border border-white p-5">
+          <h1 class="text-4xl">20</h1><br>
+          <p>Years of Industry Expertise</p>
+        </div>
+    
+        <div class="border border-white p-5">
+          <h1 class="text-4xl">50+</h1><br>
+          <p>Global Network of Partners</p>
+        </div>
+    
+        <div class="border border-white p-5">
+          <h1 class="text-4xl">100%</h1><br>
+          <p>Real-Time Tracking of Shipments</p>
+        </div>
+      </div>
+    </div>
+    
 
          <!-- cards section -->
 
-    <div class="flex flex-col md:flex-row p-[7%] gap-3">
-      <article class="flex flex-col w-full  md:w-[45%]  ">
-        <h1 class="text-[50px] text-center font-semibold pb-3 text-sm/13">Logistics Solutions</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet Id adipisci repudiandae laborum maiores voluptatibus amet nisi hic aliquam praesentium culpa!</p>
-        <button class="flex- justify-center items-center bg-gray-600 py-2 px-4 mt-5 text-white ">All services
+    <div class="grid md:flex-row p-[7%] gap-3">
+      <article class="flex flex-col   ">
+        <h1 class="text-3xl md:text-[50px] text-center font-semibold pb-3 ">Logistics Solutions</h1>
+        <p class="text-center">We provide seamless logistics solutions tailored to meet your business needs. From freight transportation and warehousing to last-mile delivery, our services ensure efficiency, reliability, and cost-effectiveness. With a focus on timely deliveries and optimized supply chain management, we help businesses streamline operations and achieve success.</p>
+        <button class="bg-gray-600 py-2  mt-5  text-white w-full">All services
           <span class="text-2xl font-bold">&rarr;</span>
         </button>
-        <!-- <img class="w-full" src="images/warehouseworker.jpg.webp" alt="" srcset=""> -->
       </article>
 
-    <aside class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  p-2 text-white ">
+    <aside class=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4  p-2 text-white ">
 
         <div class="border border-gray-100 p-3 w-full  rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
            <h1 class="text-2xl font-bold text-center pb-3">Freight Transportation</h1> 
@@ -136,12 +167,12 @@
          </div>
        </div>
 
-      <div class="w-full relative rounded-sm flex flex-col  bg-gray-400 hover:border-gray-300 duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1]">
-        <h1 class="text-2xl font-bold top-5  absolute">Freight Transportation</h1> 
+      <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] object-cover">
+        <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
          <img class="w-full mx-auto" src="images/moving daf.jpg" alt="" >
        <div class="py-3 absolute top-3/6 p-6">
-        <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-         <button class="bg-gray-600 py-2 px-4 flex justify-start items-center hover:bg-gray-500 duration-300 ease-out">see more</button>
+         <p>We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
+         <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
        </div>
      </div>
 
@@ -155,14 +186,33 @@
       </div>
 
     </aside>
-
-      <!-- about us -->
-    <div>
-
-    </div>
-    
+ 
   </div>
 
+
+     <!-- OUR PARTNERS SECTION -->
+    <div class="h-[40vh] px-[7%] bg-gray-400 mb-9">
+      <h1 class="text-center font-bold text-xl md:text-3xl lg:text-4xl py-7">OUR TRUSTED PARTNERS</h1>
+      <div>
+        
+      </div>
+
+    </div>
+
+   
+
+    <!-- TESTIMONIAL SECTION -->
+    <div class="bg-gray-900 text-white">
+      <div class="flex">
+        <div>
+          <img src="./images/potrait 1.jpg" alt="" class="h[200px] w-[200px] ">
+          <div>
+            <p>"We've been working with this logistics company for over two years, and their services have consistently exceeded our expectations. From freight transportation to last-mile delivery, we know we can rely on them to meet our deadlines and ensure our products arrive safely. Their customer service is exceptional, and they truly understand the complexities of the logistics industry. Highly recommend!"</p>
+            <span>Sarah., Operations Manager</span>
+          </div>
+        </div>
+       </div>
+  </div>
      
       
   
