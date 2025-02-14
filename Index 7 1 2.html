@@ -34,7 +34,7 @@
   </head>
   <body>
 
-    <main class="px-[7%] bg-[url('./images/truck1.jpg')]  h-screen relative bg-cover backdrop-blur-xs bg-center bg-no-repeat text-white font-Roboto w-full overflow-hidden">
+    <main class="px-[7%] bg-[url('./images/truck1.jpg')]  h-screen relative bg-cover backdrop-blur-xs bg-center bg-no-repeat text-white font-Roboto w-full flex items-center  justify-start overflow-hidden">
       <!-- navbar -->
       <nav class="fixed px-[7%] top-0 left-0 w-full flex items-center justify-between z-50 py-4 text-white border-b border-white bg-gray-900 ">
         <div class="flex">
@@ -108,7 +108,7 @@
 
       <!-- hero section -->
 
-      <div class=" mt-[15%] w-full md:w-full lg:w-1/2 ">
+      <div class=" w-full md:w-full lg:w-1/2 flex justify-center items-center">
         <aside class=" pt-[10%] bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-60  ">
           <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Moving your goods with speed and care.</h1>
           <p class="text-lg mt-4">Fast, Reliable, and Efficient Logistics Solutions</p>
@@ -130,7 +130,7 @@
     </main>
 
      <!-- STATISTICS SECTION-->
-     <div class="flex flex-col w-full py-10 bg-[url('./images/truck2')] bg-cover bg-center items-center  mt-20">
+     <div class="flex flex-col w-full py-10 bg-[url('./images/')] bg-cover bg-center items-center bg-gray-900 mt-20">
       
 
       <!-- Heading -->
@@ -163,7 +163,7 @@
 
          <!-- cards section -->
 
-    <div class="grid md:flex-row p-[2%] md:px-[7%] gap-3">
+<div class="grid md:flex-row p-[2%] md:px-[7%] gap-3">
       <article class="flex flex-col mb-7">
         <h1 class="text-3xl py-10 md:text-[40px] text-center pb-3 ">Logistics Solutions</h1>
         <p class="text-left text-[14px]">We provide seamless logistics solutions tailored to meet your business needs. From freight transportation and warehousing to last-mile delivery, our services ensure efficiency, reliability, and cost-effectiveness. With a focus on timely deliveries and optimized supply chain management, we help businesses streamline operations and achieve success.</p>
@@ -174,35 +174,30 @@
 
     <aside class=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4  p-2 text-white ">
 
-      <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] p-2">
-        <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
-         <img class="w-full mx-auto rounded-lg" src="images/moving daf.jpg" alt="" >
-       <div class="py-3 absolute top-3/6 p-6 ">
-         <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-         <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
-       </div>
-     </div>
-
-     <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] object-cover">
-      <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
-       <img class="w-full mx-auto" src="images/truck2.jpg" alt="" >
-     <div class="py-3 absolute top-3/6 p-6">
-       <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-       <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
-     </div>
-   </div>
-
-   <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] object-cover">
-    <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
-     <img class="w-full mx-auto" src="images/truck 3.jpg" alt="" >
-   <div class="py-3 absolute top-3/6 p-6">
-     <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
-     <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
-   </div>
- </div>
-
-  
-
+        <div class="w-full  rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer transition-transform duration-300 hover:scale-[1.1] p-2">
+          <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center ">Freight Transportation</h1> 
+          <img class="w-full mx-auto rounded-lg" src="images/moving daf.jpg" alt="" >
+        <div class="py-3 top-3/6 p-6 ">
+          <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
+          <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
+        </div>
+      </div>
+        <div class="w-full  rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer transition-transform duration-300 hover:scale-[1.1] p-2">
+          <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center ">Freight Transportation</h1> 
+          <img class="w-full mx-auto rounded-lg" src="images/moving daf.jpg" alt="" >
+        <div class="py-3 top-3/6 p-6 ">
+          <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
+          <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
+        </div>
+      </div>
+        <div class="w-full  rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer transition-transform duration-300 hover:scale-[1.1] p-2">
+          <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center ">Freight Transportation</h1> 
+          <img class="w-full mx-auto rounded-lg" src="images/moving daf.jpg" alt="" >
+        <div class="py-3 top-3/6 p-6 ">
+          <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
+          <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
+        </div>
+      </div>
     </aside>
  
   </div>
@@ -211,9 +206,9 @@
      <!-- OUR PARTNERS SECTION -->
     <div class=" px-[7%] bg-gray-400 mb-9 mt-9 ">
       <div class="overflow-x-hidden py-7 "> 
-        <h1 class="text-center md:text-[1.8rem] lg:text-[1.8rem] py-7 text-white mb-4">OUR TRUSTED PARTNERS</h1>
+        <h1 class="text-center md:text-[1.8rem] lg:text-[1.8rem] text-white mb-4">OUR TRUSTED PARTNERS</h1>
         <div class="flex items-center justify-between pb-16  flex-wrap text-[20px]">
-          <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <!-- <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
           <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
           <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
           <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
@@ -221,7 +216,7 @@
           <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
           <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
           <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
-          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40"> -->
         </div>
       </div>
      
