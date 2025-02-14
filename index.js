@@ -4,7 +4,8 @@ const navBtn = document.querySelector(".navBtn");
 
 
 navBtn.addEventListener('click', ()=>{
-    navlinks.classList.toggle('hidden')
+    navlinks.classList.toggle('translate-x-full')
+ 
    
 
 
