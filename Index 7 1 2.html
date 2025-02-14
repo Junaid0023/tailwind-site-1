@@ -9,7 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- ===========swiperjs cdn============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="index.css">
 
     <style>
       body{
@@ -26,38 +32,55 @@
       }
     </style>
   </head>
-  <body >
+  <body>
 
-    <main class="px-[7%] bg-[url('./images/truck1.jpg')]  h-screen relative bg-cover backdrop-blur-xs bg-center bg-no-repeat text-white font-Roboto ">
+    <main class="px-[7%] bg-[url('./images/truck1.jpg')]  h-screen relative bg-cover backdrop-blur-xs bg-center bg-no-repeat text-white font-Roboto w-full overflow-hidden">
       <!-- navbar -->
-      <nav class=" px-[7%]  top-0 left-0 w-full flex items-center justify-between z-50 py-4 text-white border-b border-white bg-gray-900 ">
+      <nav class="fixed px-[7%] top-0 left-0 w-full flex items-center justify-between z-50 py-4 text-white border-b border-white bg-gray-900 ">
         <div class="flex">
-          <p class="font-bold text-2xl md:text-3xl">Junaid <span class="text-gray-400">Haulage.</span></p>
+          <p class="font-bold text-2xl md:text-2xl">Junaid <span class="text-gray-400">Haulage.</span></p>
         </div>
 
         <!-- mobile nav -->
-        <ul class="gap-5 absolute mt-7 bg-gray-400 right-0 top-14 w-full p-6 flex flex-col items-center  h-[90vh] z-10 bg-gray-400/90 duration-300 ease-in-out navlinks hidden   " >
+        <ul class="gap-5 absolute mt-7 bg-gray-900 right-0 top-14 w-2/3 p-6 flex flex-col items-center  h-[90vh] z-10 bg-gray-400/90 transform translate-x-full transition-transform duration-300 ease navlinks shadow-xl" >
           <li><a class="hover:text-gray-400 block py-2" href="Index.html">Home</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="contactUs.html">Contact Us</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">Services</a></li>
           <li><a class="hover:text-gray-400 block py-2" href="">About Us</a></li>
         </ul>
-          <button  class=" flex md:hidden fa-solid fa-bars cursor-pointer text-2xl navBtn" ></button>
+
+        
+          <button  class="fa-solid fa-bars cursor-pointer text-2xl navBtn hidden md:hidden lg:flex" ></button>
+          <!-- <button  class="fa-solid fa-xmark cursor-pointer text-2xl  closeBtn" ></button> -->
+        
+          
   
 
           <!-- desktop nav -->
 
-          <ul class="hidden md:flex gap-8 ">
+          <ul class="hidden md:flex gap-4 ">
             <li><a class="hover:text-gray-400" href="">Home</a></li>
             <li><a class="hover:text-gray-400" href="contactUs.html">Contact Us</a></li>
-            <li><a class="hover:text-gray-400" href="">Services <small>&#9660;</small></a></li>
+            <li class="relative group"><a class="hover:text-gray-400 duration-400 ease-in-out" href="">Services <small>&#9660;</small></a>
+              <ul class="hidden absolute group-hover:block left-1/2 transform -translate-x-1/2 mt-3 bg-gray-900  w-70 bg-gray-700 rounded-lg shadow-lg group-hover:block ">
+                <li class="px-4 py-2 hover:text-gray-900"><a href="">Freight & Transportation Services</a></li>
+                <li class="px-4 py-2 hover:text-gray-900"><a href="">Supply Chain Solutions</a></li>
+                <li class="px-4 py-2 hover:text-gray-900"><a href=""></a>Specialized Logistics</li>
+                <li class="px-4 py-2 hover:text-gray-900"><a href="">Customs & Compliance</a></li>
+                <li class="px-4 py-2 hover:text-gray-900"><a href="">Additional Services</a></li>
+              </ul>
+            </li>
             <li><a class="hover:text-gray-400" href="">About Us</a></li>
           </ul>
-          <button class="bg-gray-400 relative py-3  px-4 shadow cursor-pointer hover:bg-gray-600 duration-300 ease hidden md:flex">Get a Quote</button>
+          <button class="bg-gray-400 py-2 px-4 shadow-lg rounded-lg cursor-pointer hover:bg-gray-600 transition duration-300 hidden md:flex">Get a Quote</button>
+
+        
+          
+         
       </nav>
 
         <!-- social media icons -->
-      <div class="flex justify-end items-center gap-2  bg-gray-400 text-white p-1 px-4">
+      <!-- div class="fixed z-10 top-[30px] justify-end items-center gap-2 w-full right-0 left-0 bg-gray-400 text-white p-1 px-4">
         <div class="flex gap-5 mr-6">
           <a  href=""><i class="fa-brands fa-whatsapp bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
           <a  href=""><i class="fa-brands fa-facebook bg-gray-900  hover:bg-gray-600  duration-300 ease p-2 rounded-sm"></i></a>
@@ -81,13 +104,13 @@
         </div>
           
         </div>
-      </div>
+      </div>< -->
 
       <!-- hero section -->
 
       <div class=" mt-[15%] w-full md:w-full lg:w-1/2 ">
-        <aside class=" bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-60  ">
-          <h1 class="text-xl md:text-3xl lg:text-4xl font-bold">Moving your goods with speed and care.</h1>
+        <aside class=" pt-[10%] bg-gray-900/70 flex flex-col text-center py-[90px] px-7 w-full min-w-60  ">
+          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Moving your goods with speed and care.</h1>
           <p class="text-lg mt-4">Fast, Reliable, and Efficient Logistics Solutions</p>
 
             <!-- CTA buttons -->
@@ -107,11 +130,11 @@
     </main>
 
      <!-- STATISTICS SECTION-->
-     <div class="flex flex-col w-full py-10 bg-[url('./images/containers.jpg')] bg-cover bg-center items-center  mt-20">
+     <div class="flex flex-col w-full py-10 bg-[url('./images/truck2')] bg-cover bg-center items-center  mt-20">
       
 
       <!-- Heading -->
-      <h1 class="text-3xl font-bold text-center text-white mb-8">Our Achievements at a Glance</h1>
+      <h1 class="text-2xl font-bold text-center text-white mb-8">Our Achievements at a Glance</h1>
     
       <!-- Grid Section -->
       <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-white p-9 gap-4 ">
@@ -141,9 +164,12 @@
          <!-- cards section -->
 
     <div class="grid md:flex-row p-[2%] md:px-[7%] gap-3">
-      <article class="flex flex-col">
-        <h1 class="text-3xl md:text-[40px] text-center pb-3 ">Logistics Solutions</h1>
-        <p class="text-center">We provide seamless logistics solutions tailored to meet your business needs. From freight transportation and warehousing to last-mile delivery, our services ensure efficiency, reliability, and cost-effectiveness. With a focus on timely deliveries and optimized supply chain management, we help businesses streamline operations and achieve success.</p>
+      <article class="flex flex-col mb-7">
+        <h1 class="text-3xl py-10 md:text-[40px] text-center pb-3 ">Logistics Solutions</h1>
+        <p class="text-left text-[14px]">We provide seamless logistics solutions tailored to meet your business needs. From freight transportation and warehousing to last-mile delivery, our services ensure efficiency, reliability, and cost-effectiveness. With a focus on timely deliveries and optimized supply chain management, we help businesses streamline operations and achieve success.</p>
+        <!-- <button class="bg-gray-600 py-2  mt-5  text-white w-full">All services
+          <span class="text-2xl font-bold">&rarr;</span>
+        </button> -->
       </article>
 
     <aside class=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4  p-2 text-white ">
@@ -159,7 +185,7 @@
 
      <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] object-cover">
       <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
-       <img class="w-full mx-auto" src="images/moving daf.jpg" alt="" >
+       <img class="w-full mx-auto" src="images/truck2.jpg" alt="" >
      <div class="py-3 absolute top-3/6 p-6">
        <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
        <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
@@ -168,7 +194,7 @@
 
    <div class="w-full relative rounded-sm flex flex-col  bg-gray-400  hover:shadow-lg duration-400 ease-in-out container mx-auto cursor-pointer  transition-transform duration-300 hover:scale-[1.1] object-cover">
     <h1 class="text-2xl font-bold top-5 left-1/2 transform -translate-x-1/2 text-center absolute">Freight Transportation</h1> 
-     <img class="w-full mx-auto" src="images/moving daf.jpg" alt="" >
+     <img class="w-full mx-auto" src="images/truck 3.jpg" alt="" >
    <div class="py-3 absolute top-3/6 p-6">
      <p class="text-[14px]">We provide reliable freight transport, secure storage, and efficient distribution. Our services ensure smooth logistics, timely deliveries, and optimized supply chain management.</p> 
      <button class="bg-gray-600 py-2 px-4 flex justify-start items-center mx-left mt-3 hover:bg-gray-500 duration-300 ease-out">see more</button>
@@ -183,28 +209,39 @@
 
 
      <!-- OUR PARTNERS SECTION -->
-    <div class="h-[40vh] px-[7%] bg-gray-400 mb-9 mt-9">
-      <h1 class="text-center text-[17px] md:text-[1.8rem] lg:text-[1.8rem] py-7">OUR TRUSTED PARTNERS</h1>
-      <div>
-        
+    <div class=" px-[7%] bg-gray-400 mb-9 mt-9 ">
+      <div class="overflow-x-hidden py-7 "> 
+        <h1 class="text-center md:text-[1.8rem] lg:text-[1.8rem] py-7 text-white mb-4">OUR TRUSTED PARTNERS</h1>
+        <div class="flex items-center justify-between pb-16  flex-wrap text-[20px]">
+          <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo2.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+          <img src="images/logo3.png" alt="" class="h-20 w-20 md:h-40 h-20 w-20 md:w-40">
+        </div>
       </div>
+     
 
     </div>
 
    
 
     <!-- TESTIMONIAL SECTION -->
-    <div class=" w-full flex flex-col mb-8 relative px-[7%]">
-      <h1 class="text-center text-3xl ">What Our Clients Say</h1>
-
-        <i class='bx bx-chevron-right text-black'></i>
-        <i class='bx bx-chevron-left text-blue-400'></i>
+    <div class=" w-full flex mb-8 relative overflow-hidden swiper mySwiper">
+      
+<!-- ==============NAVIGATIO BUTTONS -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
  
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
-      
+      <div class=" swiper-wrapper">
+     
         <!-- Testimonial Card 1 -->
-        <div class="flex flex-col p-3 border border-gray-900 rounded-lg w-full" id="card">
+        <div class="testimonial-card flex flex-col px-5 py-8 border border-gray-900 rounded-lg w-full container shadow-[0_4px_20px_rgba(0,0,0,0.5)] swiper-slide" id="card">
           <p class="text-[14px] mb-3">
             "We've been working with this logistics company for over two years, and their services have consistently exceeded our expectations..."
           </p>
@@ -227,9 +264,9 @@
         </div>
       
         <!-- Testimonial Card 2 -->
-        <div class="flex flex-col p-3 border border-gray-900 rounded-lg w-full" id="card">
+        <div class="testimonial-card flex flex-col px-5 py-8 border border-gray-900 rounded-lg w-full container shadow-[0_4px_20px_rgba(0,0,0,0.5)] swiper-slide" id="card">
           <p class="text-[14px] mb-3">
-            "Excellent service! Their team is always responsive, and deliveries are on time. Highly recommend this company!"
+            "Working with Junaid Haulage has been a game-changer for our distribution. Their logistics network is reliable, and they always find the best shipping solutions."
           </p>
           <div class="flex justify-between bg-gray-900 p-3 text-white rounded-md">
             <div class="flex gap-3 items-center">
@@ -250,9 +287,9 @@
         </div>
       
         <!-- Testimonial Card 3 -->
-        <div class="flex flex-col p-3 border border-gray-900 rounded-lg w-full" id="card">
+        <div class="testimonial-card flex flex-col px-5 py-8 border border-gray-900 rounded-lg w-full container shadow-[0_4px_20px_rgba(0,0,0,0.5)] swiper-slide" id="card">
           <p class="text-[14px] mb-3">
-            "Reliable and professional service. We've never had an issue with their deliveries. Definitely worth partnering with!"
+            "We switched to  for our storage and distribution needs, and it was the best decision. Their warehouses are secure, and fulfillment is seamless."
           </p>
           <div class="flex justify-between bg-gray-900 p-3 text-white rounded-md">
             <div class="flex gap-3 items-center">
@@ -271,43 +308,35 @@
             </div>
           </div>
         </div>
+
+        <div class="testimonial-card flex flex-col px-5 py-8 border border-gray-900 rounded-lg w-full container shadow-[0_4px_20px_rgba(0,0,0,0.5)] swiper-slide" id="card">
+          <p class="text-[14px] mb-3">
+            "We switched to Junaid Haulage for our storage and distribution needs, and it was the best decision. Their warehouses are secure, and fulfillment is seamless."
+          </p>
+          <div class="flex justify-between bg-gray-900 p-3 text-white rounded-md">
+            <div class="flex gap-3 items-center">
+              <img src="./images/potrait 1.jpg" alt="" class="h-[50px] w-[50px] rounded-full object-cover border-2 border-gray-400">
+              <div class="flex flex-col">
+                <p class="text-sm font-semibold">Imran Johnson</p>
+                <small class="text-gray-300">Operations Director</small>
+              </div>
+            </div>
+            <div class="text-xs flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-     
+        <!-- ===================PAGINATION============= -->
+        <div class="swiper-pagination"></div>
       
    </div>
-
-    <!-- ===========================End of testimonials=============================== -->
-
-
-   <!-- ================================== Contact Section ============================ -->
- <div class="mb-8 px-[7%]" >
-  <h1 class="text-center text-4xl">Contact Us</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 p-6 ">
-      <div class="">
-        <img src="images/dockedship.jpg" alt="" srcset="">
-      </div>
-
-      <form class=" flex flex-col items-center justify-center px-20">
-          <h1 class="text-center  text-xl"> We cant wait to work with you! Drop us a line and we'll get back to you soon!</h1>
-         
-          <input type="text" class="block border-none outline-none w-full mb-4 ">
-
-          
-          <input type="text" placeholder="Email" class=" block border-none outline-none w-full mb-4">
-
-          
-          <input type="password" class="block border-none outline-none w-full mb-4" placeholder="Password" >
-
-         
-          <textarea class="w-full h-[100px]" placeholder="Enter message"></textarea>
-
-          <button class="bg-gray-900 text-white py-3 w-full flex justify-center mx-auto" type="submit">Submit</button >
-      </form>
-    
-    </div>
-   
-  </div>
      
       
   
@@ -315,9 +344,9 @@
 
  <footer class=" bg-gray-900  text-white p-9">
 
-    <div class="px-[7%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <div class="px-[3%] md:px-[7%] grid grid-cols-1 md:grid-cols-[auto_auto_auto_1fr] gap-5 lg:grid-cols-[300px_300px_300px_1fr]">
       <div>
-        <h3 class="mb-3 text-xl italic">Quick links</h3>
+        <h3 class="mb-3 text-[17px] italic">Quick links</h3>
         <ul class=" gap-4 text-[14px] ">
           <li><a class="hover:text-gray-400 leading-[2.5rem]" href="">Home</a></li>
           <li><a class="hover:text-gray-400 leading-[2.5rem]" href="">Contact Us</a></li>
@@ -328,40 +357,48 @@
       </div>
 
       <div class="leading-[2.5rem]">
-        <h3 class="mb-3 text-xl leading-[2.5rem] cursor-pointe hover:text-gray-400r">Junaid Haulage</h3>
-        <p class="text-[14px] leading-[2.5rem] cursor-pointer hover:text-gray-400">"Reliable Logistics, On-Time Every Time"</p>
-        <p class="text-[14px] leading-[2.5rem] cursor-pointer hover:text-gray-400">Address: Tamale Asawaba Industrial Area</p>
-        <p class="text-[14px] leading-[2.5rem] cursor-pointer hover:text-gray-400">Phone: +233557207554</p>
-        <p class="text-[14px] leading-[2.5rem] cursor-pointer hover:text-gray-400">Email:JunaidHaulage7@gmail.com</p>
+        <h3 class="mb-3 text-[17px]">Junaid Haulage</h3>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">"Reliable Logistics, On-Time Every Time"</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Address: Tamale Asawaba Industrial Area</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Phone: +233557207554</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Email:JunaidHaulage7@gmail.com</p>
       </div>
 
       <div class="leading-[2.5rem]">
-        <h3 class="mb-3 text-xl">Customer Support</h3>
-        <p class="text-[14px] cursor-pointer hover:text-gray-400">FAQS</p>
-        <p class="text-[14px] cursor-pointer hover:text-gray-400">Shipping Policies</p>
-        <p class="text-[14px] cursor-pointer hover:text-gray-400">Terms & Conditions</p>
-        <p class="text-[14px] cursor-pointer hover:text-gray-400">Privacy Policy</p>
-        <P class="text-[14px] cursor-pointer hover:text-gray-400">Support Center</P>
+        <h3 class="mb-3 text-[17px]">Customer Support</h3>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">FAQS</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Shipping Policies</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Terms & Conditions</p>
+        <p class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Privacy Policy</p>
+        <P class="text-[14px] hover:text-gray-600 duration-300 ease cursor-pointer">Support Center</P>
       </div>
 
-      <div class="">
-        <a  href=""><i class="fa-brands fa-facebook  bg-gray-600 duration-300 hover:bg-gray-900 ml-2 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
-        <a  href=""><i class="fa-brands fa-whatsapp bg-gray-600 duration-300 hover:bg-gray-900 ml-2 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
-        <a  href=""><i class="fa-brands fa-tiktok  bg-gray-600 duration-300 hover:bg-gray-900 ml-2 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
-        <a  href=""><i class="fa-brands fa-instagram  bg-gray-600 duration-300 hover:bg-gray-900 ml-2 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
-        
-        <!-- news letter section -->
-          <h2 class="mt-20 text-[19px] ">Subscribe to our news letter</h2>
-          <div class="bg-white relative rounded-[20px] overflow-hidden ">
-            <input  type="text" class="border-none outline-none p-2 w-full text-black ">
-            <button class="bg-gray-400 px-5 py-2 cursor-pointer rounded-[20px] absolute right-0 top-1/2 transform -translate-y-1/2 hover:bg-gray-500 duration-300 ">Submit</button>
+      <div class="flex flex-col ">
+        <div class="flex items-center justify-start gap-5 mb-3">
+          <a  href=""><i class="fa-brands fa-facebook  bg-gray-600 duration-300 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
+          <a  href=""><i class="fa-brands fa-whatsapp bg-gray-600 duration-300 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
+          <a  href=""><i class="fa-brands fa-tiktok  bg-gray-600 duration-300 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
+          <a  href=""><i class="fa-brands fa-instagram  bg-gray-600 duration-300 ease p-2 rounded-lg md:text-xl   p-2"></i></a>
+        </div> 
+  
+        <div>
+            <!-- news letter section -->
+            <h2 class="mb-3 text-[17px] py-3">Subscribe to our news letter</h2>
+            <div class="border border-gray-400 relative rounded-lg overflow-hidden">
+              <input  type="text" class="border-none outline-none p-2 w-full text-gray-300 bg-none " placeholder="Enter email">
+              <button class="bg-gray-400 px-5 py-2 cursor-pointer rounded-lg absolute right-0 top-1/2 transform -translate-y-1/2 hover:bg-gray-500 duration-300">Submit</button>
+            </div>
           </div>
         </div>
+      </div>
 
-    </div>
+   
+       
+
+ 
 
           <!-- copyright section -->
-          <div class="w-full px-[7%]  text-center py-2 mt- opacity-50">
+          <div class="w-full px-[7%]  text-center py-2 mt-5 opacity-50">
             <small class="">&copy; <span id="year"></span> Junaid Haulage. All rights reserved.</small>
           </div>
      
@@ -374,7 +411,7 @@
 
    
  
-     
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
